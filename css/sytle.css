@@ -1,0 +1,143 @@
+@charset 'utf-8';
+
+body {
+  background: url(../img/wine-glasses-g49a904ed4_1280.jpg) 0 0 / cover no-repeat;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.inner {
+  width: 1344px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.h1 .logo {
+  display: block;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+
+  color: #fff;
+  font-weight: 700;
+}
+
+.gnb {
+  display: flex;
+  margin-left: auto;
+  margin-left: 30px;
+}
+
+.gnb li {
+  padding: 10px 30px;
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Pretendard";
+  color: #fff;
+}
+
+li:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+.utll-menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+}
+
+.hidden {
+  /* 더미텍스트 날려버리는 작업 */
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.wine-info {
+  /* background: #5f5; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px 25px;
+}
+
+.wine-info li {
+  /* border: 1px solid #000; */
+  /* border-radius: 40px; */
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.wine-info li dl {
+  text-align: center;
+  margin-top: 20px;
+}
+.wine-info li dt {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.wine-info li dd {
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.wine-info li figure {
+  display: block;
+}
+
+.wine-info li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 100%;
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.dim-wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 450px;
+  background: #fff;
+  border: 10px solid #000;
+  opacity: 0;
+}
+
+body.action .dim-wrap {
+  opacity: 1;
+}
