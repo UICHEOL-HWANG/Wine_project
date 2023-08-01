@@ -15,7 +15,7 @@ $(function () {
       name: '뱅꼬레 레드 (375,750㎖)',
       Ename: 'Vincoree Red',
       img: 'https://cdn.imweb.me/thumbnail/20210706/3c20dfba774a1.png',
-      vod: '',
+      vod: '"https://www.youtube.com/embed/lVSXO_DvcTI?autoplay=1;" allow="autoplay;"',
     },
     {
       name: '뱅꼬레 아이스 (375㎖)',
